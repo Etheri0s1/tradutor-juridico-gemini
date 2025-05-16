@@ -1,0 +1,56 @@
+:root {
+    --cor-primaria: #0d6efd;
+    --cor-secundaria: #6c757d;
+    --fundo-claro: #f8f9fa;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-cabecalho {
+    height: 60px;
+}
+
+.area-upload {
+    border: 2px dashed var(--cor-primaria);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-upload.highlight {
+    background-color: rgba(13, 110, 253, 0.05);
+    border: 2px solid var(--cor-primaria);
+}
+
+.caixa-resultado {
+    border-left: 4px solid var(--cor-primaria);
+    white-space: pre-line;
+    min-height: 150px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+#nome-arquivo {
+    color: var(--cor-primaria);
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.row {
+    align-items: stretch;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
